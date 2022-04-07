@@ -29,11 +29,11 @@ ejemplo POST: localhost:9090/conversor
 En el header: Authorization=token
 json de entrada: {"monto": 20.00,"monedaOrigen":"USD","monedaDestino":"PEN"}
 
-#Mysql
+# Mysql
 1.- docker pull mysql
 2.- docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql:latest
 
-#Dockerizar la app
+# Dockerizar la app
 0.- ejecutar una consola
 1.- ubicarse en la ruta de proyecto.
 2.- unicar el DockerFile en la raiz del proyecto
