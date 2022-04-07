@@ -1,0 +1,213 @@
+{
+	"info": {
+		"_postman_id": "8ff02617-83c7-44f5-84da-c80c7c83c717",
+		"name": "RetoJAVACollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1.- Auth - Autenticacion - (user/password- admin/admin)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"username\":\"admin\",\r\n\"password\":\"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/auth",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2.- Registro TipoCambio",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1ZGllbmNlIjoid2ViIiwiY3JlYXRlZCI6MTY0OTI4ODkxNDMxMywiZXhwIjoxNjQ5ODkzNzE0fQ.0m-687crpbwje-JC8b6XsRqJ9MB94qu2ThFrKn5PTh0LRQVeKipydwDlUOiLkfgZSlJh0x0Fvl5-ckr7nTc9hg",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"monedaOrigen\":\"USD\",\r\n\"monedaDestino\":\"PEN\",\r\n\"tipoCambio\": 3.6327\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/conversor/tipoCambio",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"conversor",
+						"tipoCambio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3.- Consulta TipoCambio",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1ZGllbmNlIjoid2ViIiwiY3JlYXRlZCI6MTY0OTI4ODI0NDQ2MywiZXhwIjoxNjQ5ODkzMDQ0fQ.Cyp1SGItBnXkpW3TcUUSII-cvAFcL4hoJTJnkgQaVKRbVOL0ny9qrh13H3figY3K7YXiyjlDHQ-qao71uWsDJw",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:9090/conversor/tipoCambio",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"conversor",
+						"tipoCambio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4.- Actualizar TipoCambio",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkaWVuY2UiOiJ3ZWIiLCJjcmVhdGVkIjoxNjQ5Mjg2MTQwOTUzLCJleHAiOjE2NDk4OTA5NDB9.Fj4gTXiO-PvW_W4x09WGHwUo-AIRZwGUblFveWAhOjKpHfO0fwJb2j_e7SxsFGVXWwPyHxUW7W_wR5nArKU4vg",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"monedaOrigen\": \"USD\",\r\n    \"monedaDestino\": \"PEN\",\r\n    \"tipoCambio\": 3.6329\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/conversor/tipoCambio",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"conversor",
+						"tipoCambio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5.- Conversor Moneda",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1ZGllbmNlIjoid2ViIiwiY3JlYXRlZCI6MTY0OTI4ODI0NDQ2MywiZXhwIjoxNjQ5ODkzMDQ0fQ.Cyp1SGItBnXkpW3TcUUSII-cvAFcL4hoJTJnkgQaVKRbVOL0ny9qrh13H3figY3K7YXiyjlDHQ-qao71uWsDJw",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"monto\": 20.00,\r\n\"monedaOrigen\":\"USD\",\r\n\"monedaDestino\":\"PEN\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/conversor",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"conversor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6.- Datos del usuario",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1ZGllbmNlIjoid2ViIiwiY3JlYXRlZCI6MTY0OTIzNDQwNzUyMiwiZXhwIjoxNjQ5ODM5MjA3fQ.1zUeImF4VyQIqQf87R0OZI0OM9BKapDdxH_md5vvw4heHzYKtepME0VjzlKX1PR2S50CIiPQDKtoJe-TEKRq1g",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:9090/user",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ejemplo de Rol Admin",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ1c2VyIiwiYXVkaWVuY2UiOiJ3ZWIiLCJjcmVhdGVkIjoxNjQ5Mjg2MTQwOTUzLCJleHAiOjE2NDk4OTA5NDB9.Fj4gTXiO-PvW_W4x09WGHwUo-AIRZwGUblFveWAhOjKpHfO0fwJb2j_e7SxsFGVXWwPyHxUW7W_wR5nArKU4vg",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:9090/admin",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"admin"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
