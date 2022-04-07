@@ -11,21 +11,21 @@ json de salida:
 
 2.- Registro TipoCambio
 ejemplo POST: localhost:9090/conversor/tipoCambio
-En el header: Authorization=<TOKEN>
+En el header: Authorization=token
 json de entrada:  {"monedaOrigen":"USD","monedaDestino":"PEN","tipoCambio": 3.6327 } 
 
 3.- Consulta TipoCambio
 ejemplo GET: localhost:9090/conversor/tipoCambio
-En el header: Authorization=<TOKEN>
+En el header: Authorization=token
 
 4.- Actualizar TipoCambio
 ejemplo PUT: localhost:9090/conversor/tipoCambio
-En el header: Authorization=<TOKEN>
+En el header: Authorization=token
 json de entrada:
   {    "id": 1,    "monedaOrigen": "USD",    "monedaDestino": "PEN",    "tipoCambio": 3.6329 }
   
 5.- Conversor Moneda
 ejemplo POST: localhost:9090/conversor
-En el header: Authorization=<TOKEN>
+En el header: Authorization=token
 json de entrada: {"monto": 20.00,"monedaOrigen":"USD","monedaDestino":"PEN"}
 
