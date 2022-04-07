@@ -1,7 +1,7 @@
 # conversor
 conversor de moneda
 
-# Pasos despues de la ejecucion
+# Pasos después de la ejecución
 
 1.- Auth - Autenticacion - (user/password- admin/admin)
 ejemplo POST: localhost:9090/auth
