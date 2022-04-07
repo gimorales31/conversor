@@ -35,7 +35,7 @@ json de entrada: {"monto": 20.00,"monedaOrigen":"USD","monedaDestino":"PEN"}
 
 # Dockerizar la app
 0.- ejecutar una consola
-1.- ubicarse en la ruta de proyecto.
+1.- ubicarse en la ruta de proyecto
 2.- unicar el DockerFile en la raiz del proyecto
 3.- ejecutar en la consola el comando: docker build -t "conversor-moneda" .
 4.- luego ejecutar el comando: docker run --name conversor-springboot-docker -p 9090:9090 conversor-moneda:latest
