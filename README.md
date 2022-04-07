@@ -48,7 +48,7 @@ json de entrada: {"monto": 20.00,"monedaOrigen":"USD","monedaDestino":"PEN"}
 
 1.- ubicarse en la ruta de proyecto
 
-2.- unicar el DockerFile en la raiz del proyecto
+2.- ubicar el DockerFile en la raiz del proyecto
 
 3.- ejecutar en la consola el comando: docker build -t "conversor-moneda" .
 
