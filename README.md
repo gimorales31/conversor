@@ -35,7 +35,7 @@ json de entrada: {"monto": 20.00,"monedaOrigen":"USD","monedaDestino":"PEN"}
 
 2.- docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql:latest
 
-3.- docker exec -it 585b2feb24c4 mysql -uroot -p
+3.- docker exec -it 'imagen_docker' mysql -uroot -p
 
 4.- show databases;
 
